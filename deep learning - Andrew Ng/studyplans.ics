@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+PRODID:-//Coursera//Learner Study Calendar 1.0//EN
+NAME:Coursera Study Calendar
+X-WR-CALNAME:Coursera Study Calendar
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:20220615T072131Z
+DTSTART:20220613T100000
+DTEND:20220613T103000
+SUMMARY:Learning time - Convolutional Neural Networks
+UID:kWGvJivBEeeW5RJUyz1uFA~2022-06-15T07:21:31.879~courseraorg
+DESCRIPTION:Course: Convolutional Neural Networks\nhttps://www.coursera.o
+ rg/learn/convolutional-neural-networks/home/welcome
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20220725T065959Z;BYDAY=MO,TU,WE,TH,FR
+END:VEVENT
+END:VCALENDAR
