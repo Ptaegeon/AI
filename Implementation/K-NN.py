@@ -14,16 +14,16 @@ def distance(x,y):
     return np.sqrt(pow((x[0]-y[0]),2)+pow((x[1]-y[1]),2))
 
 #knn알고리즘
-def knn(x,y,k):
+def knn(x,y,k): # x: new data, y: dataset, k: number of neiborhood
     result=[]
     cnt=0
     for i in range(len(y)):
-        result.append([distance(x,y[i]),y[i][2]])
+        result.append([distance(x,y[i]),y[i][2]])   # (distance, class)
     result.sort()
     for i in range(k):
-        if(result[i][1]==i):
+        if(result[i][1]==1): # class 1일때 cnt++        
             cnt+=1
-    if(cnt > (k/2)):
+    if(cnt > (k/2)):        # cnt가 과반수 이상일때
         print("This is class 1")
     else:
         print("This is class 0")
